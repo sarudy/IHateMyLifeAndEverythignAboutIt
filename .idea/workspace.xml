@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="I got the stupid ENUM lowercase thing figured out.  Not why I'm here but what the heck">
-      <change afterPath="$PROJECT_DIR$/src/service/CustomerService.java" afterDir="false" />
+    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="doubt the sorting part makes any difference but might as well stay current">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WhatsBrokenNow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsBrokenNow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
@@ -37,13 +36,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/srudy/personal/cognizant/IHateMyLifeAndEverythignAboutIt/src"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/srudy/personal/cognizant/IHateMyLifeAndEverythignAboutIt/src&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\srudy\personal\cognizant\IHateMyLifeAndEverythignAboutIt\src" />
@@ -79,13 +78,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679611309244</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="doubt the sorting part makes any difference but might as well stay current">
+      <created>1679687206177</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679687206177</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="no no, starting over from scratch is FINE" />
     <MESSAGE value="I feel so productive right now" />
     <MESSAGE value="I got the stupid ENUM lowercase thing figured out.  Not why I'm here but what the heck" />
-    <option name="LAST_COMMIT_MESSAGE" value="I got the stupid ENUM lowercase thing figured out.  Not why I'm here but what the heck" />
+    <MESSAGE value="doubt the sorting part makes any difference but might as well stay current" />
+    <option name="LAST_COMMIT_MESSAGE" value="doubt the sorting part makes any difference but might as well stay current" />
   </component>
 </project>

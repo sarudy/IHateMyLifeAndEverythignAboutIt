@@ -23,13 +23,12 @@ public class Customer implements Comparable<Customer>{
         }
     }
 
-    @Override
+
     public int compareTo(Customer c)
-    { String d = c.getLastName();
-        if (d.compareTo(c.getLastName()) < 0) {
+    { if (this.getLastName().compareTo(c.getLastName()) < 0) {
             return 1;
         }
-        else if (d.compareTo(c.getLastName()) > 0 ) {
+        else if (this.getLastName().compareTo(c.getLastName()) > 0 ) {
             return -1;
         }
         else {
