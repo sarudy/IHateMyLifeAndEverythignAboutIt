@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Customer {
+public class Customer implements Comparable<Customer>{
     // Thus uses an email checker regex I found via search instead of the one from the lesson
     // because I was feeling fancy but still lazy
     public static final Pattern VALID_EMAIL_ADDRESS_REGEX =
@@ -22,6 +22,21 @@ public class Customer {
             throw new IllegalArgumentException();
         }
     }
+
+    @Override
+    public int compareTo(Customer c)
+    { String d = c.getLastName();
+        if (d.compareTo(c.getLastName()) < 0) {
+            return 1;
+        }
+        else if (d.compareTo(c.getLastName()) > 0 ) {
+            return -1;
+        }
+        else {
+            return 0;
+        }
+    }
+
 
     public static boolean isValidEmail(String emailStr) {
         Matcher matcher = VALID_EMAIL_ADDRESS_REGEX.matcher(emailStr);
