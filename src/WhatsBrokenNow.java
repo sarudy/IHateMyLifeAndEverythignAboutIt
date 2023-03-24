@@ -21,7 +21,7 @@ public class WhatsBrokenNow {
         System.out.println(CustomerService.getAllCustomers());
 
         // rooms
-        System.out.println("\n🏨🛌🛌🛌🏨 rooms test data");
+        System.out.println("\n🏨🔑🛁🚽🛌 rooms test data");
         IRoom room100 = new model.Room("100", RoomType.SINGLE, 200.00);
         IRoom room150 = new model.Room("150", RoomType.SINGLE, 200.00);
         IRoom room200 = new model.Room("200", RoomType.DOUBLE, 400.00);
@@ -34,5 +34,8 @@ public class WhatsBrokenNow {
         service.ReservationService.addRoom(room333);
         System.out.println("🧡 rooms collection");
         System.out.println(service.ReservationService.rooms);
+
+        // reservations
+        System.out.println("\n📞☎💻🖥📒 reservations test data");
     }
 }
