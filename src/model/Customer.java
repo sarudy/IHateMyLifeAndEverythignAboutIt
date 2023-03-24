@@ -25,17 +25,16 @@ public class Customer implements Comparable<Customer>{
 
 
     public int compareTo(Customer c)
-    { if (this.getLastName().compareTo(c.getLastName()) < 0) {
+    { if (this.getLastName().compareTo(c.getLastName()) > 0) {
             return 1;
         }
-        else if (this.getLastName().compareTo(c.getLastName()) > 0 ) {
+        else if (this.getLastName().compareTo(c.getLastName()) < 0 ) {
             return -1;
         }
         else {
             return 0;
         }
     }
-
 
     public static boolean isValidEmail(String emailStr) {
         Matcher matcher = VALID_EMAIL_ADDRESS_REGEX.matcher(emailStr);

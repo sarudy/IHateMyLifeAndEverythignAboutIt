@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="doubt the sorting part makes any difference but might as well stay current">
+    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="My friend Mel is an angel and I now know how to write CompareTo statements, which is pretty good given I didn't know what one was last night and IntellIJ's were useless.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WhatsBrokenNow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsBrokenNow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679687206177</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="My friend Mel is an angel and I now know how to write CompareTo statements, which is pretty good given I didn't know what one was last night and IntellIJ's were useless.">
+      <created>1679688376421</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679688376421</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -93,6 +99,7 @@
     <MESSAGE value="I feel so productive right now" />
     <MESSAGE value="I got the stupid ENUM lowercase thing figured out.  Not why I'm here but what the heck" />
     <MESSAGE value="doubt the sorting part makes any difference but might as well stay current" />
-    <option name="LAST_COMMIT_MESSAGE" value="doubt the sorting part makes any difference but might as well stay current" />
+    <MESSAGE value="My friend Mel is an angel and I now know how to write CompareTo statements, which is pretty good given I didn't know what one was last night and IntellIJ's were useless." />
+    <option name="LAST_COMMIT_MESSAGE" value="My friend Mel is an angel and I now know how to write CompareTo statements, which is pretty good given I didn't know what one was last night and IntellIJ's were useless." />
   </component>
 </project>
