@@ -41,4 +41,16 @@ public class CustomerService {
             System.out.println("Please use a valid email address.");
         }
     }
+
+    public static Customer getCustomer(String customerEmail) {
+        for (Customer customer : customers) {
+            if (customerEmail == customer.getEmail()) {
+                return customer;
+            }
+        } return null;
+    }
+
+    public static Collection<Customer> getAllCustomers() {
+       return customers;
+    }
 }

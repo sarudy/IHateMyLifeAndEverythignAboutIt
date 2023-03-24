@@ -23,7 +23,6 @@ public class Customer implements Comparable<Customer>{
         }
     }
 
-
     public int compareTo(Customer c)
     { if (this.getLastName().compareTo(c.getLastName()) > 0) {
             return 1;

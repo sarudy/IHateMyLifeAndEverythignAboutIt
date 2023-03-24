@@ -8,9 +8,13 @@ public class WhatsBrokenNow {
         // Oh look, fake customers
         service.CustomerService.addCustomer("toilet@girldeer.net","Jon","Doe");
         service.CustomerService.addCustomer("apples@oranges.net","Froot","Loop");
-        service.CustomerService.addCustomer("foo@bar.com","Alice","Walker");
-        service.CustomerService.addCustomer("foo1@bar.com","Becky","Smith");
+        service.CustomerService.addCustomer("irene@bohemia.com","Irene","Adler");
+        service.CustomerService.addCustomer("cptjack@badwolf.com","Jack","Harkness");
         System.out.println(CustomerService.customers);
+
+        System.out.println(CustomerService.getCustomer("irene@bohemia.com"));
+
+        System.out.println(CustomerService.getAllCustomers());
 
     }
 }
