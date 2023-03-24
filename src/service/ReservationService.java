@@ -21,8 +21,18 @@ public class ReservationService {
         }
         return INSTANCE;
     }
+
     public static void addRoom(IRoom room) {
         rooms.add(room);
+    }
+
+    public static IRoom getARoom(String roomId) {
+        for (IRoom room : rooms) {
+            if (roomId == room.getRoomNumber()) {
+                return room;
+            }
+        }
+        return null;
     }
     public static Reservation reserveARoom(final Customer customer, final IRoom room,
                                            final LocalDate checkInDate, final LocalDate checkOutDate) {
@@ -30,4 +40,17 @@ public class ReservationService {
         reservations.add(reservation);
         return reservation;
     }
+
+    private static boolean isBooked(final String roomNumber, final LocalDate checkInDate, final LocalDate checkOutDate) {
+        for (Reservation reservation : reservations) {
+            if (roomNumber == reservation.getRoom().getRoomNumber() &&
+                    checkInDate.isBefore(reservation.getCheckOutDate()) &&
+                    checkOutDate.isAfter(reservation.getCheckInDate())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 }

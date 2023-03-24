@@ -2,6 +2,9 @@ import model.IRoom;
 import model.Room;
 import model.RoomType;
 import service.CustomerService;
+import service.ReservationService;
+
+import java.time.LocalDate;
 
 public class WhatsBrokenNow {
     public static void main(String[] args) {
@@ -34,8 +37,12 @@ public class WhatsBrokenNow {
         service.ReservationService.addRoom(room333);
         System.out.println("🧡 rooms collection");
         System.out.println(service.ReservationService.rooms);
+        System.out.println("💛 single room lookup");
+        System.out.println(ReservationService.getARoom("200"));
 
         // reservations
         System.out.println("\n📞☎💻🖥📒 reservations test data");
+        service.ReservationService.reserveARoom(CustomerService.getCustomer("irene@bohemia.com"),
+                room100, LocalDate.of(2024,01,01),LocalDate.of(2024,01,03));
     }
 }

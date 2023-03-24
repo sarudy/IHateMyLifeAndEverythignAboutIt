@@ -3,7 +3,7 @@ package model;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Reservation {
+public class Reservation implements Comparable<Reservation> {
     public final Customer customer;
     private final IRoom room;
     // I know I am deviating from the script but I had to find another source to learn about dates because the
@@ -44,6 +44,18 @@ public class Reservation {
                 getRoom().equals(that.getRoom()) &&
                 getCheckInDate().equals(that.getCheckInDate()) &&
                 getCheckOutDate().equals(that.getCheckOutDate());
+    }
+
+    public int compareTo(Reservation r)
+    { if (this.getCheckInDate().isBefore(r.getCheckInDate())) {
+        return 1;
+    }
+    else if (this.getCheckInDate().isBefore(r.getCheckInDate())) {
+        return -1;
+    }
+    else {
+        return 0;
+    }
     }
 
     @Override

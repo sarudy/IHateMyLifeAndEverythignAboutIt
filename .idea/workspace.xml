@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="I wonder why I can add customers directly but not rooms - the Interface maybe?">
+    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="ok.  big breath.  reservatiions time">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WhatsBrokenNow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsBrokenNow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ReservationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679694702257</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ok.  big breath.  reservatiions time">
+      <created>1679695172663</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679695172663</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -123,6 +132,7 @@
     <MESSAGE value="My friend Mel is an angel and I now know how to write CompareTo statements, which is pretty good given I didn't know what one was last night and IntellIJ's were useless." />
     <MESSAGE value="Oh naps, the one thing I will miss is the ease of Key lookups" />
     <MESSAGE value="I wonder why I can add customers directly but not rooms - the Interface maybe?" />
-    <option name="LAST_COMMIT_MESSAGE" value="I wonder why I can add customers directly but not rooms - the Interface maybe?" />
+    <MESSAGE value="ok.  big breath.  reservatiions time" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok.  big breath.  reservatiions time" />
   </component>
 </project>
