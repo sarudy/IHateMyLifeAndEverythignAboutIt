@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="My friend Mel is an angel and I now know how to write CompareTo statements, which is pretty good given I didn't know what one was last night and IntellIJ's were useless.">
+    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="Oh naps, the one thing I will miss is the ease of Key lookups">
+      <change afterPath="$PROJECT_DIR$/src/service/ReservationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WhatsBrokenNow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsBrokenNow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/IRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/IRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/CustomerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679688730519</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Oh naps, the one thing I will miss is the ease of Key lookups">
+      <created>1679691117887</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679691117887</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -109,6 +118,7 @@
     <MESSAGE value="I got the stupid ENUM lowercase thing figured out.  Not why I'm here but what the heck" />
     <MESSAGE value="doubt the sorting part makes any difference but might as well stay current" />
     <MESSAGE value="My friend Mel is an angel and I now know how to write CompareTo statements, which is pretty good given I didn't know what one was last night and IntellIJ's were useless." />
-    <option name="LAST_COMMIT_MESSAGE" value="My friend Mel is an angel and I now know how to write CompareTo statements, which is pretty good given I didn't know what one was last night and IntellIJ's were useless." />
+    <MESSAGE value="Oh naps, the one thing I will miss is the ease of Key lookups" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oh naps, the one thing I will miss is the ease of Key lookups" />
   </component>
 </project>

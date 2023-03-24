@@ -3,7 +3,7 @@ package model;
 import java.text.NumberFormat;
 import java.util.Objects;
 
-public class Room implements IRoom {
+public class Room implements IRoom, Comparable<IRoom> {
     private final String roomNumber;
     private final RoomType roomType;
     private final Double roomPrice;
@@ -42,6 +42,18 @@ public class Room implements IRoom {
         return "Room " + roomNumber + ": " +
                 roomType + ", " +
                 formatter.format(roomPrice) + " per night";
+    }
+
+    public int compareTo(IRoom r)
+    { if (this.getRoomNumber().compareTo(r.getRoomNumber()) > 0) {
+        return 1;
+    }
+    else if (this.getRoomNumber().compareTo(r.getRoomNumber()) < 0 ) {
+        return -1;
+    }
+    else {
+        return 0;
+    }
     }
 
     @Override

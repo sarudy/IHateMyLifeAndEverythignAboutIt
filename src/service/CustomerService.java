@@ -2,7 +2,9 @@ package service;
 
 import model.Customer;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Scanner;
+import java.util.TreeSet;
 
 public class CustomerService {
     public static final TreeSet<Customer> customers = new TreeSet<>();
@@ -33,6 +35,7 @@ public class CustomerService {
         return email.toLowerCase();
         // I was thinking as long as I was in here I should make all the emails lowercase to save lookup issues later.
     }
+
     public static void addCustomer(String email, String firstName, String lastName) {
         try {
             Customer customer = new Customer(firstName, lastName, email);
@@ -47,10 +50,11 @@ public class CustomerService {
             if (customerEmail == customer.getEmail()) {
                 return customer;
             }
-        } return null;
+        }
+        return null;
     }
 
     public static Collection<Customer> getAllCustomers() {
-       return customers;
+        return customers;
     }
 }
