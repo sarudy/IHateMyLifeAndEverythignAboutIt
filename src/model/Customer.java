@@ -60,7 +60,7 @@ public class Customer implements Comparable<Customer> {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getFirstName(), getLastName(), getEmail());
+        return Objects.hash(getEmail(), getFirstName(), getLastName());
     }
 
     // This override is on purpose though.  It seems like a one line output will make things fit better later.

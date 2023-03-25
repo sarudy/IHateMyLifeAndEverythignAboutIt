@@ -1,6 +1,4 @@
 import api.HotelResource;
-import service.CustomerService;
-import service.PrettyPrint;
 
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
@@ -52,7 +50,7 @@ public class MainMenu {
                     startMainMenu();
                     break;
                 case "4":
-                    System.out.println("[4] Admin                               " );
+                    System.out.println("[4] Admin                               ");
                     break;
                 case "5":
 //                    System.out.println("[5] Exit                                ");
@@ -67,7 +65,6 @@ public class MainMenu {
             System.out.println("well that was no good");
         }
     }
-
 
 
     public static void createANewAccount() {
@@ -109,7 +106,8 @@ public class MainMenu {
                     default:
                         System.out.println("Please enter one of the given options:");
                         startMainMenu();
-                } optionScan.close();
+                }
+                optionScan.close();
             } catch (Exception e) {
                 System.out.println("well that was no good");
             }

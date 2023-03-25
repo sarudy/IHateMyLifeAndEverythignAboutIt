@@ -1,14 +1,3 @@
-import api.HotelResource;
-import model.IRoom;
-import model.Reservation;
-import model.RoomType;
-import service.CustomerService;
-import service.PrettyPrint;
-import service.ReservationService;
-import service.TestData;
-
-import java.time.LocalDate;
-
 public class WhatsBrokenNow {
     public static void main(String[] args) {
 
@@ -64,7 +53,7 @@ public class WhatsBrokenNow {
 
 //        ReservationService.printAllReservation();
 
-            MainMenu.createANewAccount();
+        MainMenu.createANewAccount();
 //        CustomerService.addCustomer("bob@bofh.com","Bob","Howard");
     }
 }

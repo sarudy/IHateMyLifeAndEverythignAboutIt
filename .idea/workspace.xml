@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="Had to allow for equal dates">
-      <change afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
+    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="ok all customer objects are going to be in the order email - first - last.  I'm getting too many mistakes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WhatsBrokenNow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsBrokenNow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/HotelResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/HotelResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/PrettyPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/PrettyPrint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679710089280</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ok all customer objects are going to be in the order email - first - last.  I'm getting too many mistakes.">
+      <created>1679767968155</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679767968155</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -191,7 +193,8 @@
     <MESSAGE value="fake datta for testing" />
     <MESSAGE value="ok so it does not like the CompareTo on Reservations" />
     <MESSAGE value="Had to allow for equal dates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Had to allow for equal dates" />
+    <MESSAGE value="ok all customer objects are going to be in the order email - first - last.  I'm getting too many mistakes." />
+    <option name="LAST_COMMIT_MESSAGE" value="ok all customer objects are going to be in the order email - first - last.  I'm getting too many mistakes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

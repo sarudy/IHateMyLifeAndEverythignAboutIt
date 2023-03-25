@@ -27,7 +27,7 @@ public class CustomerService {
                 goodEmail = Customer.isValidEmail(tryAgain);
                 if (Customer.isValidEmail(tryAgain)) {
                     return tryAgain.toLowerCase();
-                } scanEmail.close();
+                } // scanEmail.close();
             }
         }
         return email.toLowerCase();
@@ -36,7 +36,7 @@ public class CustomerService {
 
     public static void addCustomer(String email, String firstName, String lastName) {
         try {
-            Customer newCustomer = new Customer(firstName,lastName,email);
+            Customer newCustomer = new Customer(email, firstName, lastName);
             System.out.println(newCustomer);
             customers.add(newCustomer);
         } catch (IllegalArgumentException e) {

@@ -40,7 +40,7 @@ public class TestData {
         service.ReservationService.addRoom(room333);
     }
 
-    public static void  importFakeReservations() {
+    public static void importFakeReservations() {
         service.ReservationService.reserveARoom(CustomerService.getCustomer("irene@bohemia.com"),
                 ReservationService.getARoom("100"),
                 LocalDate.of(2024, 01, 01),
