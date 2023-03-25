@@ -13,14 +13,14 @@ public class Customer implements Comparable<Customer> {
     private final String lastName;
     private final String email;
 
-    public Customer(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Customer(String email, String firstName, String lastName) {
         if (isValidEmail(email)) {
             this.email = email;
         } else {
             throw new IllegalArgumentException();
         }
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public static boolean isValidEmail(String emailStr) {
@@ -38,16 +38,16 @@ public class Customer implements Comparable<Customer> {
         }
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     public String getFirstName() {
         return firstName;
     }
 
     public String getLastName() {
         return lastName;
-    }
-
-    public String getEmail() {
-        return email;
     }
 
     /* just letting IntellIJ throw these in here.  I mean what's the harm? */

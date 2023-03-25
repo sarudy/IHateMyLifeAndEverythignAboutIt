@@ -28,11 +28,11 @@ public class HotelResource {
     }
 
     public static Customer getCustomer(String email) {
-        return getCustomer(email);
+        return CustomerService.getCustomer(email);
     }
 
     public static void createACustomer(String email, String firstName, String lastName) {
-        addCustomer(email, firstName, lastName);
+        CustomerService.addCustomer(email, firstName, lastName);
     }
 
     public static IRoom getRoom(String roomNumber) {

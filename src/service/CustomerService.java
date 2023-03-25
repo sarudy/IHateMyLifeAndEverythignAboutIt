@@ -17,19 +17,17 @@ public class CustomerService {
         return INSTANCE;
     }
 
-
     public static String getValidEmail(String email) {
         if (!Customer.isValidEmail(email)) {
             boolean goodEmail = false;
             while (!goodEmail) {
-                Scanner scanner = new Scanner(System.in);
+                Scanner scanEmail = new Scanner(System.in);
                 System.out.println("Invalid email format.  Please enter the email again:");
-                String tryAgain = scanner.nextLine();
+                String tryAgain = scanEmail.nextLine();
                 goodEmail = Customer.isValidEmail(tryAgain);
                 if (Customer.isValidEmail(tryAgain)) {
-                    scanner.close();
                     return tryAgain.toLowerCase();
-                }
+                } scanEmail.close();
             }
         }
         return email.toLowerCase();
@@ -38,10 +36,11 @@ public class CustomerService {
 
     public static void addCustomer(String email, String firstName, String lastName) {
         try {
-            Customer customer = new Customer(firstName, lastName, email);
-            customers.add(customer);
+            Customer newCustomer = new Customer(firstName,lastName,email);
+            System.out.println(newCustomer);
+            customers.add(newCustomer);
         } catch (IllegalArgumentException e) {
-            System.out.println("Please use a valid email address.");
+            System.out.println("Please use a valid email address. ");
         }
     }
 

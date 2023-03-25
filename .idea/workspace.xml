@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="ok so it does not like the CompareTo on Reservations">
+    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="Had to allow for equal dates">
+      <change afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WhatsBrokenNow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsBrokenNow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/HotelResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/HotelResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/PrettyPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/PrettyPrint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +52,20 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\srudy\personal\cognizant\IHateMyLifeAndEverythignAboutIt\src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WhatsBrokenNow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WhatsBrokenNow" />
+      <module name="IHateMyLifeAndEverythignAboutIt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WhatsBrokenNow" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -150,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679707020252</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Had to allow for equal dates">
+      <created>1679710089280</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679710089280</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -166,6 +190,20 @@
     <MESSAGE value="I think thats the api blocked in" />
     <MESSAGE value="fake datta for testing" />
     <MESSAGE value="ok so it does not like the CompareTo on Reservations" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok so it does not like the CompareTo on Reservations" />
+    <MESSAGE value="Had to allow for equal dates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Had to allow for equal dates" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.NoSuchElementException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IHateMyLifeAndEverythignAboutIt$WhatsBrokenNow.ic" NAME="WhatsBrokenNow Coverage Results" MODIFIED="1679763820257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -25,10 +25,14 @@ public class PrettyPrint {
         return INSTANCE;
     }
 
+    public static void printCustomer(Customer customer) {
+        System.out.println(customer.getFirstName() + " " + customer.getLastName() + " (" + customer.getEmail() + ")");
+    }
+
     public static void printCustomers() {
         System.out.println("Customer List:");
         for (Customer customer : CustomerService.customers) {
-            System.out.println(customer.getFirstName() + " " + customer.getLastName() + " (" + customer.getEmail() + ")");
+            printCustomer(customer);
         }
     }
 
