@@ -1,5 +1,6 @@
 package service;
 
+import model.Customer;
 import model.IRoom;
 import model.Reservation;
 
@@ -22,6 +23,13 @@ public class PrettyPrint {
             INSTANCE = new PrettyPrint();
         }
         return INSTANCE;
+    }
+
+    public static void printCustomers() {
+        System.out.println("Customer List:");
+        for (Customer customer : CustomerService.customers) {
+            System.out.println(customer.getFirstName() + " " + customer.getLastName() + " (" + customer.getEmail() + ")");
+        }
     }
 
     public static void printRoom(IRoom thisRoom) {

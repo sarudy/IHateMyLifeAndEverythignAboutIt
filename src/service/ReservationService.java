@@ -152,6 +152,7 @@ public class ReservationService {
         }
 
     }
+
     public static String checkRoomNumber() {
         Scanner scanner = new Scanner(System.in);
         boolean goodNumber = false;
@@ -169,12 +170,12 @@ public class ReservationService {
                 } else {
                     System.out.println("The room number should be between 100 and 999.");
                 }
-            }
-            catch (NumberFormatException e) {
+            } catch (NumberFormatException e) {
                 System.out.println("Room numbers should be numbers only.");
-                getValidRoomNumber();
+                checkRoomNumber();
             }
-        }return null;
+        }
+        return null;
     }
 
 }

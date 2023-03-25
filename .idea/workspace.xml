@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="Finished out ReservationService and made a PrettyPrint side segment">
-      <change afterPath="$PROJECT_DIR$/src/api/AdminResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/HotelResource.java" afterDir="false" />
+    <list default="true" id="d1386230-53c1-4f27-a381-595e442ee97a" name="Changes" comment="I think thats the api blocked in">
+      <change afterPath="$PROJECT_DIR$/src/service/TestData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WhatsBrokenNow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsBrokenNow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/AdminResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/AdminResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/PrettyPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/PrettyPrint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ReservationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679704014866</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="I think thats the api blocked in">
+      <created>1679706043321</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679706043321</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -148,6 +157,7 @@
     <MESSAGE value="I wonder why I can add customers directly but not rooms - the Interface maybe?" />
     <MESSAGE value="ok.  big breath.  reservatiions time" />
     <MESSAGE value="Finished out ReservationService and made a PrettyPrint side segment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished out ReservationService and made a PrettyPrint side segment" />
+    <MESSAGE value="I think thats the api blocked in" />
+    <option name="LAST_COMMIT_MESSAGE" value="I think thats the api blocked in" />
   </component>
 </project>

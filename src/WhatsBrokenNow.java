@@ -2,7 +2,9 @@ import model.IRoom;
 import model.Reservation;
 import model.RoomType;
 import service.CustomerService;
+import service.PrettyPrint;
 import service.ReservationService;
+import service.TestData;
 
 import java.time.LocalDate;
 
@@ -11,17 +13,14 @@ public class WhatsBrokenNow {
 
         // customers
         System.out.println("👩🧑👦👶👵 customers test data");
-        service.CustomerService.addCustomer("toilet@girldeer.net", "Jon", "Doe");
-        service.CustomerService.addCustomer("apples@oranges.net", "Froot", "Loop");
-        service.CustomerService.addCustomer("irene@bohemia.com", "Irene", "Adler");
-        service.CustomerService.addCustomer("cptjack@badwolf.com", "Jack", "Harkness");
-        service.CustomerService.addCustomer("greensleeves@headless.com", "Ann", "Boleyn");
+        TestData.importFakeCustomers();
         System.out.println("🧡 customers collection");
         System.out.println(CustomerService.customers);
         System.out.println("💛 single customer lookup");
         System.out.println(CustomerService.getCustomer("irene@bohemia.com"));
         System.out.println("💚 all customers class");
         System.out.println(CustomerService.getAllCustomers());
+        PrettyPrint.printCustomers();
 
         // rooms
         System.out.println("\n🏨🔑🛁🚽🛌 rooms test data");

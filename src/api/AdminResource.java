@@ -43,7 +43,7 @@ public class AdminResource {
     public static void displayAllReservations() {
         printAllReservation();
     }
-    public static void String getValidRoomNumber() {
-        checkRoomNumber();
+    public static String getValidRoomNumber() {
+        return checkRoomNumber();
     }
 }
