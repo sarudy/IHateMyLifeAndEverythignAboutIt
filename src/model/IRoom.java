@@ -1,6 +1,6 @@
 package model;
 
-public interface IRoom{
+public interface IRoom {
     String getRoomNumber();
 
     RoomType getRoomType();

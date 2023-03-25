@@ -1,5 +1,5 @@
 import model.IRoom;
-import model.Room;
+import model.Reservation;
 import model.RoomType;
 import service.CustomerService;
 import service.ReservationService;
@@ -39,10 +39,23 @@ public class WhatsBrokenNow {
         System.out.println(service.ReservationService.rooms);
         System.out.println("💛 single room lookup");
         System.out.println(ReservationService.getARoom("200"));
+        System.out.println("💚 single room pretty print");
+        service.PrettyPrint.printRoom(room200);
+        System.out.println("💚 all rooms pretty print");
+        service.PrettyPrint.printRooms(ReservationService.rooms);
 
         // reservations
         System.out.println("\n📞☎💻🖥📒 reservations test data");
         service.ReservationService.reserveARoom(CustomerService.getCustomer("irene@bohemia.com"),
-                room100, LocalDate.of(2024,01,01),LocalDate.of(2024,01,03));
+                room100, LocalDate.of(2024, 01, 01), LocalDate.of(2024, 01, 03));
+        System.out.println(ReservationService.findrooms((LocalDate.of(2024, 01, 02)), LocalDate.of(2024, 02, 04)));
+
+        System.out.println(ReservationService.findrooms((LocalDate.of(2024, 03, 02)), LocalDate.of(2024, 03, 04)));
+
+        Reservation testRes = new Reservation(CustomerService.getCustomer("irene@bohemia.com"),
+                room100, LocalDate.of(2024, 07, 01), LocalDate.of(2024, 07, 03));
+        ReservationService.printAllReservation();
+
+
     }
 }

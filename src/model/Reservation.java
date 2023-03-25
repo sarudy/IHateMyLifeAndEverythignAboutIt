@@ -46,16 +46,14 @@ public class Reservation implements Comparable<Reservation> {
                 getCheckOutDate().equals(that.getCheckOutDate());
     }
 
-    public int compareTo(Reservation r)
-    { if (this.getCheckInDate().isBefore(r.getCheckInDate())) {
-        return 1;
-    }
-    else if (this.getCheckInDate().isBefore(r.getCheckInDate())) {
-        return -1;
-    }
-    else {
-        return 0;
-    }
+    public int compareTo(Reservation r) {
+        if (this.getCheckInDate().isBefore(r.getCheckInDate())) {
+            return 1;
+        } else if (this.getCheckInDate().isBefore(r.getCheckInDate())) {
+            return -1;
+        } else {
+            return 0;
+        }
     }
 
     @Override
