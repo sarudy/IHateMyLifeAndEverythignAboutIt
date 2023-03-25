@@ -36,25 +36,37 @@ public class Reservation implements Comparable<Reservation> {
     }
 
     /* I trust you IntellIJ function.  Please don't betray me here */
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Reservation that)) return false;
-        return getCustomer().equals(that.getCustomer()) &&
-                getRoom().equals(that.getRoom()) &&
-                getCheckInDate().equals(that.getCheckInDate()) &&
-                getCheckOutDate().equals(that.getCheckOutDate());
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof Reservation that)) return false;
+//        return getCustomer().equals(that.getCustomer()) &&
+//                getRoom().equals(that.getRoom()) &&
+//                getCheckInDate().equals(that.getCheckInDate()) &&
+//                getCheckOutDate().equals(that.getCheckOutDate());
+//    }
 
-    public int compareTo(Reservation r) {
-        if (this.getCheckInDate().isBefore(r.getCheckInDate())) {
+//    public int compareTo(Reservation r) {
+//        if (this.getCheckInDate().isBefore(r.getCheckInDate())) {
+//            return 1;
+//        } else if (this.getCheckInDate().isBefore(r.getCheckInDate())) {
+//            return -1;
+//        } else {
+//            return 0;
+//        }
+//    }
+
+    @Override
+    public int compareTo(Reservation o) {
+        if (this.getCheckInDate().isAfter(o.getCheckInDate()) || this.getCheckInDate().isEqual(o.getCheckInDate()) ) {
             return 1;
-        } else if (this.getCheckInDate().isBefore(r.getCheckInDate())) {
+        } else if (this.getCheckInDate().isBefore(o.getCheckInDate())) {
             return -1;
         } else {
-            return 0;
-        }
+        return 0;}
     }
+
+
 
     @Override
     public int hashCode() {
