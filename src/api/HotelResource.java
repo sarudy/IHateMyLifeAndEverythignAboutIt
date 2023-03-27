@@ -7,7 +7,6 @@ import service.CustomerService;
 import service.ReservationService;
 
 import java.time.LocalDate;
-import java.util.Collection;
 import java.util.TreeSet;
 
 public class HotelResource {

@@ -239,7 +239,8 @@ public class MainMenu {
                     startMainMenu();
                     break;
                 case "4":
-                    System.out.println("[4] Admin                               ");
+//                    System.out.println("[4] Admin                               ");
+                    AdminMenu.startAdminMenu();
                     break;
                 case "5":
 //                    System.out.println("[5] Exit                                ");

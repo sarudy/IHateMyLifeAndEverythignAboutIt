@@ -52,7 +52,7 @@ public class CustomerService {
         return null;
     }
 
-    public static Collection<Customer> getAllCustomers() {
+    public static TreeSet<Customer> getAllCustomers() {
         return customers;
     }
 }

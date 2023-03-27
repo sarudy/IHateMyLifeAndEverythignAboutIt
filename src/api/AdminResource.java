@@ -6,6 +6,7 @@ import service.CustomerService;
 import service.ReservationService;
 
 import java.util.Collection;
+import java.util.TreeSet;
 
 import static service.ReservationService.*;
 
@@ -30,11 +31,11 @@ public class AdminResource {
         ReservationService.addRoom(room);
     }
 
-    public static Collection<IRoom> getAllRooms() {
+    public static TreeSet<IRoom> getAllRooms() {
         return rooms;
     }
 
-    public static Collection<Customer> getAllCustomers() {
+    public static TreeSet<Customer> getAllCustomers() {
         return CustomerService.getAllCustomers();
     }
 

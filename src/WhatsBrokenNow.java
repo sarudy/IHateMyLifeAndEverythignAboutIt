@@ -65,10 +65,10 @@ public class WhatsBrokenNow {
 //        System.out.println(customer);
 //        System.out.println(customerTest);
 //        System.out.println(customers);
-
-        TestData.importFakeRooms();
-        TestData.importFakeCustomers();
-        TestData.importFakeReservations();
+//
+//        TestData.importFakeRooms();
+//        TestData.importFakeCustomers();
+//        TestData.importFakeReservations();
 
         MainMenu.startMainMenu();
 
