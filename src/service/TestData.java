@@ -1,5 +1,6 @@
 package service;
 
+import api.HotelResource;
 import model.IRoom;
 import model.RoomType;
 
@@ -20,11 +21,13 @@ public class TestData {
     }
 
     public static void importFakeCustomers() {
-        service.CustomerService.addCustomer("toilet@girldeer.net", "Jon", "Doe");
-        service.CustomerService.addCustomer("apples@oranges.net", "Froot", "Loop");
-        service.CustomerService.addCustomer("irene@bohemia.com", "Irene", "Adler");
-        service.CustomerService.addCustomer("cptjack@badwolf.com", "Jack", "Harkness");
-        service.CustomerService.addCustomer("greensleeves@headless.com", "Ann", "Boleyn");
+        HotelResource.createACustomer("toilet@girldeer.net", "Jon", "Doe");
+        HotelResource.createACustomer("apples@oranges.net", "Froot", "Loop");
+        HotelResource.createACustomer("irene@bohemia.com", "Irene", "Adler");
+        HotelResource.createACustomer("cptjack@badwolf.com", "Jack", "Harkness");
+        HotelResource.createACustomer("greensleeves@headless.com", "Ann", "Boleyn");
+        HotelResource.createACustomer("she@hulk.com", "Jennifer", "Walters");
+        HotelResource.createACustomer("room@hogs.com", "Party", "People");
     }
 
     public static void importFakeRooms() {
@@ -49,18 +52,42 @@ public class TestData {
                 ReservationService.getARoom("100"),
                 LocalDate.of(2024, 02, 01),
                 LocalDate.of(2024, 02, 03));
-        service.ReservationService.reserveARoom(CustomerService.getCustomer("irene@bohemia.com"),
+        service.ReservationService.reserveARoom(CustomerService.getCustomer("apples@oranges.net"),
                 ReservationService.getARoom("100"),
                 LocalDate.of(2023, 06, 17),
                 LocalDate.of(2023, 06, 20));
         service.ReservationService.reserveARoom(CustomerService.getCustomer("apples@oranges.net"),
-                ReservationService.getARoom("200"),
-                LocalDate.of(2025, 01, 01),
-                LocalDate.of(2025, 01, 04));
-        service.ReservationService.reserveARoom(CustomerService.getCustomer("cptjack@badwolf.com"),
-                ReservationService.getARoom("200"),
+                ReservationService.getARoom("100"),
                 LocalDate.of(2023, 06, 17),
                 LocalDate.of(2023, 06, 20));
+
+
+        service.ReservationService.reserveARoom(CustomerService.getCustomer("room@hogs.com"),
+                ReservationService.getARoom("100"),
+                LocalDate.of(2025, 01, 01),
+                LocalDate.of(2025, 01, 02));
+        service.ReservationService.reserveARoom(CustomerService.getCustomer("room@hogs.com"),
+                ReservationService.getARoom("150"),
+                LocalDate.of(2025, 01, 01),
+                LocalDate.of(2025, 01, 03));
+        service.ReservationService.reserveARoom(CustomerService.getCustomer("room@hogs.com"),
+                ReservationService.getARoom("200"),
+                LocalDate.of(2025, 01, 01),
+                LocalDate.of(2025, 01, 05));
+        service.ReservationService.reserveARoom(CustomerService.getCustomer("room@hogs.com"),
+                ReservationService.getARoom("300"),
+                LocalDate.of(2025, 01, 01),
+                LocalDate.of(2025, 01, 07));
+        service.ReservationService.reserveARoom(CustomerService.getCustomer("room@hogs.com"),
+                ReservationService.getARoom("333"),
+                LocalDate.of(2025, 01, 01),
+                LocalDate.of(2025, 01, 31));
+    }
+
+    public static void importAllFakes() {
+        importFakeCustomers();
+        importFakeRooms();
+        importFakeReservations();
     }
 
 }

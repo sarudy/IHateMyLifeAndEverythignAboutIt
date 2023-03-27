@@ -3,12 +3,10 @@ package api;
 import model.Customer;
 import model.IRoom;
 import service.CustomerService;
-import service.PrettyPrint;
 import service.ReservationService;
 
 import java.util.Collection;
 
-import static service.PrettyPrint.printRooms;
 import static service.ReservationService.*;
 
 public class AdminResource {
@@ -43,6 +41,7 @@ public class AdminResource {
     public static void displayAllReservations() {
         printAllReservation();
     }
+
     public static String getValidRoomNumber() {
         return checkRoomNumber();
     }

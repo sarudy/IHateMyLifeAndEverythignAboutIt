@@ -37,16 +37,15 @@ public class CustomerService {
     public static void addCustomer(String email, String firstName, String lastName) {
         try {
             Customer newCustomer = new Customer(email, firstName, lastName);
-            System.out.println(newCustomer);
             customers.add(newCustomer);
         } catch (IllegalArgumentException e) {
             System.out.println("Please use a valid email address. ");
         }
     }
 
-    public static Customer getCustomer(String customerEmail) {
+    public static Customer getCustomer(String email) {
         for (Customer customer : customers) {
-            if (customerEmail == customer.getEmail()) {
+            if (customer.getEmail().equals(email)) {
                 return customer;
             }
         }

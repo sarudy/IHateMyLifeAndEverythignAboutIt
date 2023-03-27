@@ -6,7 +6,6 @@ import model.Reservation;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
-import java.util.Collection;
 import java.util.Scanner;
 import java.util.TreeSet;
 
@@ -31,7 +30,7 @@ public class ReservationService {
 
     public static IRoom getARoom(String roomId) {
         for (IRoom room : rooms) {
-            if (roomId == room.getRoomNumber()) {
+            if (room.getRoomNumber().equals(roomId)) {
                 return room;
             }
         }
@@ -56,7 +55,7 @@ public class ReservationService {
         return false;
     }
 
-    public static Collection<IRoom> findrooms(LocalDate checkInDate, LocalDate checkOutDate) {
+    public static TreeSet<IRoom> findrooms(LocalDate checkInDate, LocalDate checkOutDate) {
         //find all rooms not booked for the given range//
 //        TreeSet<IRoom> booked = new TreeSet<>();
         TreeSet<IRoom> open = new TreeSet<>();
@@ -70,7 +69,7 @@ public class ReservationService {
         return open;
     }
 
-    public static Collection<Reservation> getCustomersReservation(Customer customer) {
+    public static TreeSet<Reservation> getCustomersReservation(Customer customer) {
         TreeSet<Reservation> reservedByCustomer = new TreeSet<>();
         for (Reservation reservation : reservations) {
             if (customer == reservation.getCustomer()) {
@@ -108,7 +107,6 @@ public class ReservationService {
                     String tryAgain = scanner.nextLine();
                     realDate = isADate(tryAgain);
                     if (isADate(tryAgain)) {
-                        scanner.close();
                         return LocalDate.parse(tryAgain);
                     }
                 }
@@ -117,40 +115,41 @@ public class ReservationService {
         return LocalDate.parse(date);
     }
 
-
     public static LocalDate noYesterdays(LocalDate CheckIn) {
-        if (!CheckIn.isBefore(LocalDate.now())) ;
-        {
-            while (CheckIn.isBefore(LocalDate.now())) {
+        if (!CheckIn.isAfter(LocalDate.now())) {
+            boolean future = false;
+            while (!future) {
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("We cannot backdate reservations." + "\n" +
                         "Please provide a check in date today (" +
                         LocalDate.now() + ") or later: ");
                 LocalDate tryAgain = getValiDate(scanner.nextLine());
-                if (!CheckIn.isAfter(LocalDate.now())) {
+                future = tryAgain.isAfter(LocalDate.now());
+                if (future) {
                     scanner.close();
                     return tryAgain;
                 }
             }
-            return CheckIn;
         }
+        return CheckIn;
     }
 
-    public static LocalDate linearTimePlease(LocalDate CheckIn, LocalDate CheckOut) {
-        if (CheckOut.isAfter(CheckIn)) ;
-        {
-            while (CheckOut.isBefore(CheckIn)) {
+    public static LocalDate linearTimePlease(LocalDate checkIn, LocalDate checkOut) {
+        if (!checkIn.isBefore(checkOut)) {
+            boolean sequential = false;
+            while (!sequential) {
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("Visits must be at least one night long." + "\n" +
                         "Please provide a check out date at least one day after check in: ");
                 LocalDate tryAgain = getValiDate(scanner.nextLine());
-                if (CheckOut.isAfter(CheckIn)) {
+                sequential = checkIn.isBefore(tryAgain);
+                if (sequential) {
+                    scanner.close();
                     return tryAgain;
                 }
             }
-            return CheckOut;
         }
-
+        return checkOut;
     }
 
     public static String checkRoomNumber() {

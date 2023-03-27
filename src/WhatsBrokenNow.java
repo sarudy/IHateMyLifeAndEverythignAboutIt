@@ -1,3 +1,5 @@
+import service.TestData;
+
 public class WhatsBrokenNow {
     public static void main(String[] args) {
 
@@ -38,22 +40,38 @@ public class WhatsBrokenNow {
 //
 //        // reservations
 //        System.out.println("\n📞☎💻🖥📒 reservations test data");
-////        service.ReservationService.reserveARoom(CustomerService.getCustomer("irene@bohemia.com"),
-////                ReservationService.getARoom("100"),
-////                LocalDate.of(2024, 01, 01),
-////                LocalDate.of(2024, 01, 03));
-////        service.ReservationService.reserveARoom(CustomerService.getCustomer("irene@bohemia.com"),
-////                ReservationService.getARoom("100"),
-////                LocalDate.of(2024, 02, 01),
-////                LocalDate.of(2024, 02, 03));
-////        service.ReservationService.reserveARoom(CustomerService.getCustomer("irene@bohemia.com"),
-////                ReservationService.getARoom("100"),
-////                LocalDate.of(2023, 06, 17),
-////                LocalDate.of(2023, 06, 20));
+//        service.ReservationService.reserveARoom(CustomerService.getCustomer("irene@bohemia.com"),
+//                ReservationService.getARoom("100"),
+//                LocalDate.of(2024, 01, 01),
+//                LocalDate.of(2024, 01, 03));
+//        service.ReservationService.reserveARoom(CustomerService.getCustomer("irene@bohemia.com"),
+//                ReservationService.getARoom("100"),
+//                LocalDate.of(2024, 02, 01),
+//                LocalDate.of(2024, 02, 03));
+//        service.ReservationService.reserveARoom(CustomerService.getCustomer("irene@bohemia.com"),
+//                ReservationService.getARoom("100"),
+//                LocalDate.of(2023, 06, 17),
+//                LocalDate.of(2023, 06, 20));
 
 //        ReservationService.printAllReservation();
+//        Customer customer = api3.HotelResource.getCustomer("irene@bohemia.com");
+//        System.out.println(customer);
 
-        MainMenu.createANewAccount();
-//        CustomerService.addCustomer("bob@bofh.com","Bob","Howard");
+//        Scanner scanEmail = new Scanner(System.in);
+//        System.out.println("Enter the ID (i.e. email) for the customer:");
+//        String customerEmail = getValidEmail(scanEmail.nextLine());
+//        Customer customer = api.HotelResource.getCustomer(customerEmail);
+//        Customer customerTest = CustomerService.getCustomer(customerEmail);
+//        System.out.println(customer);
+//        System.out.println(customerTest);
+//        System.out.println(customers);
+
+        TestData.importFakeRooms();
+        TestData.importFakeCustomers();
+        TestData.importFakeReservations();
+
+        MainMenu.startMainMenu();
+
+
     }
 }

@@ -55,13 +55,15 @@ public class PrettyPrint {
                 "Dates: " + dmy.format(reservation.getCheckInDate()) + " to " + dmy.format(reservation.getCheckOutDate()) + "\n" +
                 "Total Cost: " +
                 formatter.format((ChronoUnit.DAYS.between(reservation.getCheckInDate(),
-                        reservation.getCheckOutDate())) * reservation.getRoom().getRoomPrice()) + "\n"
+                        reservation.getCheckOutDate())) * reservation.getRoom().getRoomPrice())
         );
     }
 
     public static void printReservations(TreeSet<Reservation> theseReservations) {
         for (Reservation thisReservation : theseReservations) {
             printReservation(thisReservation);
+            System.out.println("┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄");
+
         }
     }
 }

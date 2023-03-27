@@ -8,11 +8,7 @@ import service.ReservationService;
 
 import java.time.LocalDate;
 import java.util.Collection;
-import java.util.Map;
-
-import static service.CustomerService.addCustomer;
-import static service.CustomerService.customers;
-import static service.ReservationService.*;
+import java.util.TreeSet;
 
 public class HotelResource {
     private static HotelResource INSTANCE;
@@ -36,19 +32,19 @@ public class HotelResource {
     }
 
     public static IRoom getRoom(String roomNumber) {
-       return getARoom(roomNumber);
+        return ReservationService.getARoom(roomNumber);
     }
 
     public static Reservation bookARoom(String email, IRoom room, LocalDate checkIn, LocalDate checkOut) {
-        return reserveARoom(getCustomer(email), room, checkIn, checkOut);
+        return ReservationService.reserveARoom(CustomerService.getCustomer(email), room, checkIn, checkOut);
     }
 
-    public static Collection<Reservation> getCustomerReservations(String email) {
-        return getCustomersReservation(getCustomer(email));
+    public static TreeSet<Reservation> getCustomerReservations(String email) {
+        return ReservationService.getCustomersReservation(getCustomer(email));
     }
 
-    public static Map<String, IRoom> findARoom(LocalDate checkIn, LocalDate checkOut) {
-        return findARoom(checkIn, checkOut);
+    public static TreeSet<IRoom> findARoom(LocalDate checkIn, LocalDate checkOut) {
+        return ReservationService.findrooms(checkIn, checkOut);
     }
 
 }
